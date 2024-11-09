@@ -1,16 +1,9 @@
-import ProductCard from "@/components/product-card";
+import ProductCard from '@/components/product-card';
 
-const products = [
-	{
-		title: 'Product 1',
-		description: 'Description',
-		price: 4000,
-	},
-];
 export default function Home() {
 	return (
-		<div>
-			{products.map((product, i) => (
+		<div className='grid grid-cols-3 gap-4'>
+			{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((product, i) => (
 				<ProductCard key={i}></ProductCard>
 			))}
 		</div>
